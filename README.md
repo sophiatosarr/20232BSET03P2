@@ -19,7 +19,7 @@ Inteli - Engenharia de Software | Avaliação 2023-2B P2
 ### 5. **Ausência de Rota GET para /dogs:**
    - A rota `GET /dogs` foi definida, mas não foi implementada, o que significa que não será possível obter a lista de cães através dessa rota.
 
-#Solução
+# Solução
 
 ### 1. **Prevenção de SQL Injection:**
 - **Como foi corrigido:** As consultas SQL agora utilizam prepared statements, onde os valores são passados como parâmetros na consulta, em vez de serem diretamente concatenados na string SQL. Por exemplo, na inserção de gatos e cães (`INSERT INTO cats` e `INSERT INTO dogs`), os valores são passados como um array de parâmetros na função `db.run`.
